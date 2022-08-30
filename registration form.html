@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="E:\front end development\bootstrap niraj sir\bootstrap.css">
+  <link rel="stylesheet" href="reg form.css">
+  <title>reg frm</title>
+
+</head>
+
+<body>
+  <!-- NAVBAR*************************** -->
+  <navbar>
+    <ul>
+      <li><a href="#accessRegister" onclick="accessReg()">Register</a></li>
+      <li><a href="#contact" onclick="accessLogin()">Login</a></li>
+      <!-- <li><a href="#news" onclick="accessTab()">data</a></li> -->
+    
+    </ul>
+  </navbar>
+  <!-- <div id="splash">
+
+  </div> -->
+  
+  <!-- REGISTRAYION PAGE******************************************8 -->
+  <section-register id="accessRegister">
+    <h1 class="glow">Register Yourself</h1>
+    <div id="inputs">
+      <input class="inputFeilds" type="text" id="txtId" placeholder="Enter Id">
+
+      <input class="inputFeilds" type="password" id="txtPassword" placeholder="Enter password">
+      <input class="inputFeilds" type="text" id="txtName" placeholder="Enter Name">
+
+      <input class="inputFeilds" type="text" id="txtAddress" placeholder="Enter Address">
+
+    </div>
+    <br>
+    <buttons class="buttons">
+      <button class="button1" onclick="save()">Save</button>
+      <!-- <button class="button2" onclick="selectDel()">Delete Selected</button> -->
+      <!-- <button class="button3" onclick="resetDB()">Reset DB</button>
+      <button class="button4" onclick="updateDB()">Update DB</button> -->
+      <!-- <button class="button5" onclick="showDB()">Show DB</button> -->
+    </buttons>
+  </section-register>
+
+
+<!-- LOGIN PAGE*************************************** -->
+  <section-login id="accessLogin">
+    <div id="inputs">
+    <input class="inputFeilds" type="text" id="txtIdLogin" placeholder="Enter Id">
+    <input class="inputFeilds" type="password" id="txtPasswordLogin" placeholder="Enter password">
+    <button class="button6" onclick="login()">login</button>
+    </div>
+
+  </section-login>
+<!-- TABLE DATA PAGE************************************************* -->
+
+  <section-table id="accessTable">
+
+    <table style="width:100%" id="customers">
+      <thead>
+        <th style="width:5%"><input onclick="set()" type="checkbox" id="chk">Select</th>
+        <th style="width:10%">Name</th>
+        <th style="width:10%">Password</th>
+        <th style="width:10%">ID</th>
+        <th style="width:10%">Address</th>
+        <th style="width:10%">update/Delete</th>
+      </thead>
+      <tbody id="bdy">
+
+      </tbody>
+    </table>
+    <div id="inputs">
+      <input class="inputFeilds" type="text" id="txtIdLog" placeholder="Enter Id">
+
+      <input class="inputFeilds" type="password" id="txtPasswordLog" placeholder="Enter password">
+      <input class="inputFeilds" type="text" id="txtNameLog" placeholder="Enter Name">
+
+      <input class="inputFeilds" type="text" id="txtAddressLog" placeholder="Enter Address">
+
+    </div>
+    <button class="button3" onclick="resetDB()">Reset DB</button>
+      <button class="button4" onclick="updateDB()">Update DB</button>
+    <button class="button6" onclick="accessLogin()">logout</button>
+  </section-table>
+</body>
+<!-- SCRRRIIIPPPTTTIIIIINNNGGGGG -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+<!--//fire base linking-->
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+<script src="reg form .js"></script>
+
+
+
+
+</html>
